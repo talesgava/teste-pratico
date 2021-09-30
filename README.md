@@ -5,7 +5,7 @@
   - Node.js || v14.17.5 - https://nodejs.org/en/
   - MySQL e Workbench || 8.0.26 - https://dev.mysql.com/downloads/installer/
   - Nodemon || Para instalar rapidamente digite no terminal: __"npm install nodemon"__ 
-- Front
+- Front-end
   - Bootstrap 5 (cdnjs)
   - JQuery (cdnjs)
   - twbs-pagination (cdnjs)
