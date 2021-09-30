@@ -1,0 +1,9 @@
+{
+  "env": {
+    "MYSQL_USER": "root",
+    "MYSQL_PASSWORD": "rootmysql",
+    "MYSQL_DATABASE": "teste_pratico",
+    "MYSQL_HOST": "localhost",
+    "MYSQL_PORT": 3306
+  }
+}

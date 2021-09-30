@@ -1,0 +1,144 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background: #bbbbbb;
+  padding: 20px 0;
+}
+
+.caixa {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+
+nav {
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+
+nav a {
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #c78c19;
+  text-decoration: underline;
+}
+
+.input-padrao {
+  width: 80%;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  position: block;
+}
+
+.buscar {
+  padding: 20px;
+  margin: 20px 0 0 0;
+}
+
+.form_buscar {
+  margin: 0 15%;
+}
+
+.enviar {
+  position: absolute;
+  margin: 0 0 0 5px;
+  width: 20%;
+  padding: 12px 0;
+  background: orange;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  background: green;
+  color: white;
+}
+
+.nome_ponto {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.resultado_label_nao_encontrado {
+  font-weight: bold;
+  text-align: center;
+}
+
+.resultado_nao_encontrado {
+  display: none;
+}
+
+.resultado_encontrado {
+  padding: 0 20px;
+  margin: 0 14%;
+}
+
+.botao_ver_detalhes {
+  background-color: orange !important;
+  border: none !important;
+}
+
+.form_buscar > label {
+  padding: 10px 0;
+}
+
+.cadastrar_novo_ponto {
+  padding: 20px;
+}
+
+.form-group > label {
+  padding: 10px 0 !important;
+}
+
+.cadastrar_novo_ponto > h2 {
+  text-align: center;
+}
+
+.botao_cadastrar {
+  padding: 25px 0;
+  text-align: end;
+}
+
+.botao_cadastrar > .enviar {
+  width: 30%;
+  position: static;
+}
+
+@media screen and (max-width: 768px) {
+  .caixa {
+    width: auto;
+    text-align: center;
+  }
+
+  .resultado_encontrado {
+    margin: auto;
+  }
+
+  .form_buscar {
+    margin: auto;
+  }
+
+  .logo {
+    width: 90%;
+  }
+
+  nav {
+    position: static;
+  }
+
+  nav a {
+    margin: 0 0 0 -25px;
+  }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Pontos turísticos - Inicio</title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="caixa">
+        <h1><img class="logo" src="../img/logo.png" /></h1>
+
+        <nav>
+          <ul>
+            <li><a href="novo.html">Cadastrar um ponto turístico</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="buscar">
+        <form>
+          <div class="form_buscar">
+            <label for="buscar_ponto_turistico"
+              >Digite um termo para buscar um ponto turístico</label
+            >
+            <input
+              type="text"
+              id="buscar_ponto_turistico"
+              class="input-padrao"
+              required
+            />
+
+            <input type="submit" value="Buscar" class="enviar buscar_ponto" />
+          </div>
+        </form>
+      </section>
+
+      <section class="resultado_nao_encontrado">
+        <p class="resultado_label_nao_encontrado"></p>
+      </section>
+
+      <section class="resultado_encontrado"></section>
+
+      <ul class="pagination justify-content-center pagination-sm"></ul>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

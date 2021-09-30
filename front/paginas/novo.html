@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Cadastrar novo ponto turístico</title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="caixa">
+        <h1><img class="logo" src="../img/logo.png" /></h1>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Página inicial</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <form class="cadastrar_novo_ponto">
+        <h2>Cadastro de ponto turístico</h2>
+        <div class="form-group">
+          <label for="nome_ponto">Nome:</label>
+          <input type="text" class="form-control" id="nome_ponto" />
+        </div>
+        <div class="form-group">
+          <label for="estado_ponto">Estado:</label>
+          <select class="form-control" id="estado_ponto">
+            <option value="" selected="true" disabled="disabled">
+              Selecione...
+            </option>
+            <!-- opções dinamicas -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="cidade_ponto">Cidade:</label>
+          <input type="text" class="form-control" id="cidade_ponto" />
+        </div>
+        <div class="form-group">
+          <label for="referencia_ponto">Referência:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="referencia_ponto"
+            placeholder="Rua/Ponto/Lugar"
+          />
+        </div>
+        <div class="form-group">
+          <label for="descritivo_ponto">Descritivo:</label>
+          <textarea
+            class="form-control"
+            id="descritivo_ponto"
+            rows="3"
+          ></textarea>
+        </div>
+
+        <div class="botao_cadastrar">
+          <input
+            type="submit"
+            value="Cadastrar"
+            id="cadastrar_ponto"
+            class="enviar"
+          />
+        </div>
+      </form>
+    </main>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modalauxiliar"
+      tabindex="-1"
+      aria-labelledby="modalmensagem"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalmensagem"></h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body mensagemprincipal"></div>
+          <div class="modal-footer">
+            <button type="button" data-bs-dismiss="modal" class="btn btn-primary">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/novo.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
