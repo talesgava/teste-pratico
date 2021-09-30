@@ -3,7 +3,7 @@
 ### Ferramentas usadas desenvolver e rodar a aplicação
 - Back-end
   - Node.js || v14.17.5 
-  - MySQL || 8.0.26 
+  - MySQL e Workbench || 8.0.26 
   - Nodemon || Para instalar rapidamente digite no terminal: __"npm install nodemon"__ 
 - Front
   - Bootstrap 5 (cdnjs)
