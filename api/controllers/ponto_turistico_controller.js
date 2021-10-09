@@ -50,7 +50,7 @@ exports.getBuscarPontosTuristicos = (req, res, next) => {
     conn.query(
       "SELECT nome, estado, cidade, referencia, descritivo, criado_em " +
         "FROM ponto_turistico " +
-        "WHERE nome LIKE concat(?, '%') OR estado LIKE concat(?, '%') OR cidade LIKE concat(?, '%') OR referencia LIKE concat(?, '%') OR descritivo LIKE concat(?, '%') " +
+        "WHERE nome LIKE concat('%', ?, '%') OR estado LIKE concat('%', ?, '%') OR cidade LIKE concat('%', ?, '%') OR referencia LIKE concat('%', ?, '%') OR descritivo LIKE concat('%', ?, '%') " +
         "ORDER BY criado_em DESC LIMIT 100",
       [
         req.params.textodebusca,

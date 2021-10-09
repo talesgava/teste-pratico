@@ -4,7 +4,7 @@ var $paginacao = $(".pagination"),
   totalRegistros = 0,
   registros = [],
   registrosMostrar = [],
-  registroPorPag = 5,
+  registroPorPag = 2,
   pagina = 1,
   totalPaginas = 0;
 
@@ -42,7 +42,7 @@ function cria_ponto(data) {
 function paginacao() {
   $paginacao.twbsPagination("destroy");
   $paginacao.twbsPagination({
-    totalPaginas: totalPaginas,
+    totalPages: totalPaginas,
     visiblePages: totalPaginas,
     onPageClick: function (event, pagina) {
       registrosMostradosIndex = Math.max(pagina - 1, 0) * registroPorPag;
@@ -76,7 +76,7 @@ $(".buscar_ponto").click(function () {
           return;
         }
         registros = data.resposta.pontosTuristicos;
-        console.log(registros);
+        console.log(JSON.stringify(registros));
         totalRegistros = data.resposta.pontosTuristicos.length;
         totalPaginas = Math.ceil(totalRegistros / registroPorPag);
         paginacao();
